@@ -12,7 +12,7 @@ const api = createApi({
       transformResponse: transformMarkets,
     }),
     getCoin: builder.query({
-      query: (id) => `/${id}?localization=en&tickers=true&market_data=false&community_data=false&developer_data=false&sparkline=false`,
+      query: (id) => `/${id}?localization=en&tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false`,
       transformResponse: transformCoin,
     }),
   }),

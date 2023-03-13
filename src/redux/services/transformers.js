@@ -5,12 +5,26 @@ export const transformMarkets = (response = []) => response.map((item) => ({
   price: item?.current_price,
 }));
 
-export const transformCoin = (response = {}) => ({
-  id: response?.id,
-  image: response?.image?.large,
-  name: response?.name,
-  tickers: response?.tickers?.map((ticker) => ({
-    exchange: ticker?.market?.name,
-    volume: ticker.volume,
-  })),
-});
+export const transformCoin = (response = {}) => {
+  // Remove duplicate exchanges
+  const tickers = response?.tickers?.reduce((acc, ticker) => {
+    const existing = acc.find((item) => item.market.name === ticker.market.name);
+
+    if (!existing) {
+      return [...acc, ticker];
+    }
+
+    return acc;
+  }, []);
+
+  return {
+    id: response?.id,
+    image: response?.image?.large,
+    name: response?.name,
+    price: response?.market_data?.current_price?.usd ?? 0,
+    tickers: tickers?.map((ticker) => ({
+      exchange: ticker?.market?.name,
+      volume: ticker?.volume.toFixed(2),
+    })),
+  };
+};

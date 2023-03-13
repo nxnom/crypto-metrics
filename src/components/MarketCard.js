@@ -7,7 +7,7 @@ import styles from './MarketCard.module.css';
 
 function MarketCard({ market, expanded, dark }) {
   return (
-    <Link to={market.id}>
+    <Link to={`/coins/${market.id}`}>
       <article
         className={cn(
           styles.card,

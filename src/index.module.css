@@ -19,7 +19,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: white;
   max-width: 420px;
+  min-height: 100vh;
   margin: 0 auto;
+}
+
+@media (min-width: 420px) {
+  body {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 a {
