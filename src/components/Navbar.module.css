@@ -17,3 +17,13 @@
   padding: 4px;
   font-size: 1.1rem;
 }
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: gold;
+}

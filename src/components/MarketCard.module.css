@@ -8,6 +8,7 @@
   padding: 1rem;
   color: white;
   text-align: right;
+  position: relative;
 }
 
 .expanded {
@@ -30,6 +31,12 @@
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
+}
+
+.icon {
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
 
 .expanded .imgContainer {

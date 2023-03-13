@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
 
 import styles from './MarketCard.module.css';
 
@@ -19,7 +20,9 @@ function MarketCard({ market, expanded, dark }) {
           className={styles.imgContainer}
           style={{ backgroundImage: `url(${market.image})` }}
         >
-          {/* TODO: add arrow icon */}
+          {!expanded && (
+            <Icon className={styles.icon} icon="material-symbols:arrow-circle-right-outline" />
+          )}
         </div>
         <div className={styles.details}>
           <h2 className={styles.name}>{market.name}</h2>

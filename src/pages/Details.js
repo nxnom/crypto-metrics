@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import Loading from 'src/components/Loading';
+import { Icon } from '@iconify/react';
 
+import Loading from 'src/components/Loading';
 import MarketCard from 'src/components/MarketCard';
 import Title from 'src/components/Title';
 import { useGetCoinQuery } from 'src/redux/services/api';
@@ -12,8 +13,6 @@ function Details() {
   const {
     data, isLoading, isError, error,
   } = useGetCoinQuery(id);
-
-  console.log({ isError, error });
 
   if (isLoading) {
     return <Loading />;
@@ -32,7 +31,10 @@ function Details() {
         {data.tickers.map((ticker) => (
           <div key={`${ticker.exchange}-${ticker.volume}`} className={styles.row}>
             <p className={styles.exchange}>{ticker.exchange}</p>
-            <p className={styles.volume}>{ticker.volume}</p>
+            <p className={styles.volume}>
+              <span>{ticker.volume}</span>
+              <Icon className={styles.icon} icon="material-symbols:arrow-circle-right-outline" />
+            </p>
           </div>
         ))}
       </div>
