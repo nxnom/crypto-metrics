@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
+import { selectCurrency } from 'src/redux/filter/filterSlice';
+import { formatCurrency } from 'src/utils/currency';
 import styles from './MarketCard.module.css';
 
 function MarketCard({ market, expanded, dark }) {
+  const currency = useSelector(selectCurrency);
+
   return (
     <Link to={`/coins/${market.id}`}>
       <article
@@ -21,12 +26,17 @@ function MarketCard({ market, expanded, dark }) {
           style={{ backgroundImage: `url(${market.image})` }}
         >
           {!expanded && (
-            <Icon className={styles.icon} icon="material-symbols:arrow-circle-right-outline" />
+            <Icon
+              className={styles.icon}
+              icon="material-symbols:arrow-circle-right-outline"
+            />
           )}
         </div>
         <div className={styles.details}>
           <h2 className={styles.name}>{market.name}</h2>
-          <p className={styles.price}>{market.price}</p>
+          <p className={styles.price}>
+            {formatCurrency(market.price, currency)}
+          </p>
         </div>
       </article>
     </Link>

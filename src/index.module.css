@@ -8,7 +8,7 @@
 
 :root {
   --primary: rgb(55, 48, 107);
-  --primary-dark: rgba(55, 48, 107, 0.8);
+  --primary-dark: #2C2756;
   --grey: #2d4573;
 }
 
@@ -33,4 +33,9 @@ a {
   all: unset;
   cursor: pointer;
   text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
 }

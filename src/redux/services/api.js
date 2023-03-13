@@ -8,12 +8,12 @@ const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getMarkets: builder.query({
-      query: () => '/markets?vs_currency=usd&order=market_cap_desc&per_page=41&page=1&sparkline=false&price_change_percentage=24h',
+      query: (currency) => `/markets?vs_currency=${currency}&order=market_cap_desc&per_page=41&page=1&sparkline=false&price_change_percentage=24h`,
       transformResponse: transformMarkets,
     }),
     getCoin: builder.query({
       query: (id) => `/${id}?localization=en&tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false`,
-      transformResponse: transformCoin,
+      transformResponse: (response, meta, args) => transformCoin(response, args),
     }),
   }),
 });
@@ -22,8 +22,3 @@ const api = createApi({
 export const { useGetMarketsQuery, useGetCoinQuery } = api;
 
 export default api;
-
-// selectors
-const selectMarketsResult = api.endpoints.getMarkets.select();
-
-export const selectMarkets = (state) => selectMarketsResult(state)?.data ?? [];

@@ -1,15 +1,19 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
+import { useSelector } from 'react-redux';
 
 import Loading from 'src/components/Loading';
 import MarketCard from 'src/components/MarketCard';
 import Title from 'src/components/Title';
+import { selectCurrency } from 'src/redux/filter/filterSlice';
 import { useGetCoinQuery } from 'src/redux/services/api';
 import styles from './Details.module.css';
 
 function Details() {
   const { id } = useParams();
+  const currency = useSelector(selectCurrency);
+
   const {
     data, isLoading, isError, error,
   } = useGetCoinQuery(id);
@@ -24,16 +28,21 @@ function Details() {
 
   return (
     <div>
-      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-      <MarketCard market={data} expanded />
+      <MarketCard market={{ ...data, price: data.prices[currency] ?? 0 }} expanded />
       <Title>Market Volumes</Title>
       <div>
         {data.tickers.map((ticker) => (
-          <div key={`${ticker.exchange}-${ticker.volume}`} className={styles.row}>
+          <div
+            key={`${ticker.exchange}-${ticker.volume}`}
+            className={styles.row}
+          >
             <p className={styles.exchange}>{ticker.exchange}</p>
             <p className={styles.volume}>
               <span>{ticker.volume}</span>
-              <Icon className={styles.icon} icon="material-symbols:arrow-circle-right-outline" />
+              <Icon
+                className={styles.icon}
+                icon="material-symbols:arrow-circle-right-outline"
+              />
             </p>
           </div>
         ))}
