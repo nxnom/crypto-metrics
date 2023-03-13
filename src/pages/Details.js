@@ -32,7 +32,7 @@ function Details() {
   return (
     <div>
       <MarketCard market={{ ...data, price: data.prices[currency] ?? 0 }} expanded />
-      <Title>Market Volumes</Title>
+      <Title>Trade Volumes</Title>
       <div>
         {data.tickers.map((ticker) => (
           <div

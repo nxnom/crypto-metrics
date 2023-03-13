@@ -13,7 +13,7 @@ const api = createApi({
     }),
     getCoin: builder.query({
       query: (id) => `/${id}?localization=en&tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false`,
-      transformResponse: (response, meta, args) => transformCoin(response, args),
+      transformResponse: transformCoin,
     }),
   }),
 });
