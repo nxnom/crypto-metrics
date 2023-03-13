@@ -1,13 +1,19 @@
 .header {
-  background-color: var(--primary-dark);
+  z-index: 100;
+  background-color: #2C2756;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 0 0.6rem;
 }
 
 .title {
   text-align: center;
   padding: 4px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
