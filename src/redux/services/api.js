@@ -8,7 +8,7 @@ const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getMarkets: builder.query({
-      query: () => '/markets?vs_currency=usd&order=market_cap_desc&per_page=21&page=1&sparkline=false&price_change_percentage=24h',
+      query: () => '/markets?vs_currency=usd&order=market_cap_desc&per_page=41&page=1&sparkline=false&price_change_percentage=24h',
       transformResponse: transformMarkets,
     }),
     getCoin: builder.query({

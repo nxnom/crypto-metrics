@@ -7,15 +7,20 @@
 }
 
 :root {
-  --primary: #4369b2;
-  --primary-dark: #3e61a5;
+  --primary: rgb(55, 48, 107);
+  --primary-dark: rgba(55, 48, 107, 0.8);
   --grey: #2d4573;
 }
 
 body {
-  background-color: var(--primary);
+  background-color: black;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+}
+
+main {
+  max-width: 420px;
+  margin: 0 auto;
 }

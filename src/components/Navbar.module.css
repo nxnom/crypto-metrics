@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--primary-dark);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  padding: 4px;
+  font-size: 1.2rem;
+}
