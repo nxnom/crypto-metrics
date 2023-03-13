@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
+import Loading from 'src/components/Loading';
 
 import MarketCard from 'src/components/MarketCard';
 import Title from 'src/components/Title';
@@ -15,7 +16,7 @@ function Details() {
   console.log({ isError, error });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (isError && error.status === 404) {

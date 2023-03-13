@@ -1,4 +1,5 @@
 import React from 'react';
+import Loading from 'src/components/Loading';
 
 import MarketCard from 'src/components/MarketCard';
 import Title from 'src/components/Title';
@@ -9,7 +10,7 @@ function Home() {
   const { data, isLoading } = useGetMarketsQuery();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   // To create zip-zap pattern in the grid
