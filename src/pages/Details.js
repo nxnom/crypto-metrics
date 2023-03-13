@@ -9,6 +9,7 @@ import Title from 'src/components/Title';
 import { selectCurrency } from 'src/redux/filter/filterSlice';
 import { useGetCoinQuery } from 'src/redux/services/api';
 import styles from './Details.module.css';
+import ErrorPage from './ErrorPage';
 
 function Details() {
   const { id } = useParams();
@@ -22,8 +23,10 @@ function Details() {
     return <Loading />;
   }
 
-  if (isError && error.status === 404) {
-    return <Navigate to="/404" />;
+  if (isError) {
+    if (error.status === 404) return <Navigate to="/404" />;
+
+    return <ErrorPage status={error.status} message={error.error} />;
   }
 
   return (

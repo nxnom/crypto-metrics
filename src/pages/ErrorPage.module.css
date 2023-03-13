@@ -1,0 +1,17 @@
+.container {
+  composes: container from './NotFound.module.css';
+}
+
+.title {
+  composes: title from './NotFound.module.css';
+}
+
+.text {
+  composes: text from './NotFound.module.css';
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #333;
+  opacity: 0.7;
+}

@@ -6,15 +6,22 @@ import MarketCard from 'src/components/MarketCard';
 import Title from 'src/components/Title';
 import { selectCurrency } from 'src/redux/filter/filterSlice';
 import { useGetMarketsQuery } from 'src/redux/services/api';
+import ErrorPage from './ErrorPage';
 import styles from './Home.module.css';
 
 function Home() {
   const currency = useSelector(selectCurrency);
 
-  const { data, isLoading } = useGetMarketsQuery(currency);
+  const {
+    data, isLoading, isError, error,
+  } = useGetMarketsQuery(currency);
 
   if (isLoading) {
     return <Loading />;
+  }
+
+  if (isError) {
+    return <ErrorPage status={error.status} message={error.error} />;
   }
 
   // To create zip-zap pattern in the grid
