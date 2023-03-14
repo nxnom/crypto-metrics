@@ -13,10 +13,10 @@ function Home() {
   const currency = useSelector(selectCurrency);
 
   const {
-    data, isLoading, isError, error,
+    data, isLoading, isError, error, isFetching,
   } = useGetMarketsQuery(currency);
 
-  if (isLoading) {
+  if (isLoading || isFetching) {
     return <Loading />;
   }
 
