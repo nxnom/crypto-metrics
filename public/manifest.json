@@ -1,0 +1,9 @@
+{
+  "name": "Crypto Metrics",
+  "short_name": "CryptoMetrics",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#2c2756",
+  "background_color": "#000000"
+}
+
