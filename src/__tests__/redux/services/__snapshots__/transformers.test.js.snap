@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transforms coin should match the snapshot 1`] = `
+Object {
+  "id": "bitcoin",
+  "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+  "name": "Bitcoin",
+  "prices": Object {
+    "aed": 89129,
+    "ars": 4868985,
+    "aud": 36401,
+    "bch": 191.637,
+    "bdt": 2549066,
+    "bhd": 9148.71,
+    "bits": 999500,
+    "bmd": 24268,
+    "bnb": 79.54,
+    "brl": 127331,
+    "btc": 1,
+    "cad": 33266,
+    "chf": 22165,
+    "clp": 19507759,
+    "cny": 166815,
+    "czk": 540159,
+    "dkk": 169140,
+    "dot": 4002,
+    "eos": 22796,
+    "eth": 14.525452,
+    "eur": 22717,
+    "gbp": 19966.45,
+    "hkd": 190373,
+    "huf": 8992970,
+    "idr": 373616842,
+    "ils": 88420,
+    "inr": 1999130,
+    "jpy": 3241528,
+    "krw": 31834342,
+    "kwd": 7444.55,
+    "link": 3624,
+    "lkr": 7975651,
+    "ltc": 301.659,
+    "mmk": 50754541,
+    "mxn": 461832,
+    "myr": 108842,
+    "ngn": 11129396,
+    "nok": 257694,
+    "nzd": 38973,
+    "php": 1335221,
+    "pkr": 6811317,
+    "pln": 106475,
+    "rub": 1825190,
+    "sar": 91119,
+    "sats": 99949976,
+    "sek": 258492,
+    "sgd": 32712,
+    "thb": 836818,
+    "try": 460563,
+    "twd": 741943,
+    "uah": 892515,
+    "usd": 24268,
+    "vef": 2429.95,
+    "vnd": 572019163,
+    "xag": 1110.74,
+    "xau": 12.69,
+    "xdr": 18209.06,
+    "xlm": 288966,
+    "xrp": 65730,
+    "yfi": 2.698975,
+    "zar": 443574,
+  },
+  "tickers": Array [
+    Object {
+      "exchange": "Binance",
+      "volume": "637929.43",
+    },
+    Object {
+      "exchange": "Biconomy",
+      "volume": "10332.46",
+    },
+    Object {
+      "exchange": "Tidex",
+      "volume": "62707.79",
+    },
+    Object {
+      "exchange": "Coinbase Exchange",
+      "volume": "40668.21",
+    },
+    Object {
+      "exchange": "BTCEX",
+      "volume": "21121.64",
+    },
+    Object {
+      "exchange": "Gate.io",
+      "volume": "56797.59",
+    },
+    Object {
+      "exchange": "Dcoin",
+      "volume": "20944.00",
+    },
+    Object {
+      "exchange": "XT.COM",
+      "volume": "12451.47",
+    },
+    Object {
+      "exchange": "Bitfinex",
+      "volume": "6899.42",
+    },
+    Object {
+      "exchange": "P2B",
+      "volume": "21615.07",
+    },
+    Object {
+      "exchange": "WOO X",
+      "volume": "1455.31",
+    },
+    Object {
+      "exchange": "MEXC Global",
+      "volume": "44255.00",
+    },
+    Object {
+      "exchange": "Kraken",
+      "volume": "12608.97",
+    },
+    Object {
+      "exchange": "Bitforex",
+      "volume": "20873168.85",
+    },
+    Object {
+      "exchange": "OKX",
+      "volume": "38870.84",
+    },
+    Object {
+      "exchange": "Bitstamp",
+      "volume": "6400.03",
+    },
+    Object {
+      "exchange": "WhiteBIT",
+      "volume": "20757.53",
+    },
+    Object {
+      "exchange": "Currency.com",
+      "volume": "4667.65",
+    },
+    Object {
+      "exchange": "Dex-Trade",
+      "volume": "5390.61",
+    },
+    Object {
+      "exchange": "Txbit",
+      "volume": "1005.36",
+    },
+    Object {
+      "exchange": "BKEX",
+      "volume": "14347.14",
+    },
+    Object {
+      "exchange": "CoinTR Pro",
+      "volume": "4823.86",
+    },
+    Object {
+      "exchange": "DigiFinex",
+      "volume": "2683.00",
+    },
+    Object {
+      "exchange": "Binance US",
+      "volume": "11714.79",
+    },
+    Object {
+      "exchange": "Bitget",
+      "volume": "20016.78",
+    },
+    Object {
+      "exchange": "Crypto.com Exchange",
+      "volume": "4286.95",
+    },
+    Object {
+      "exchange": "Coinsbit",
+      "volume": "33218.58",
+    },
+    Object {
+      "exchange": "ApeX Pro",
+      "volume": "1652.81",
+    },
+    Object {
+      "exchange": "BitMart",
+      "volume": "17959.90",
+    },
+    Object {
+      "exchange": "Bybit",
+      "volume": "14685.29",
+    },
+    Object {
+      "exchange": "Huobi",
+      "volume": "9660.30",
+    },
+    Object {
+      "exchange": "KuCoin",
+      "volume": "14204.74",
+    },
+    Object {
+      "exchange": "bitFlyer",
+      "volume": "5997.36",
+    },
+    Object {
+      "exchange": "LATOKEN",
+      "volume": "4722.41",
+    },
+    Object {
+      "exchange": "Bitrue",
+      "volume": "14686.56",
+    },
+    Object {
+      "exchange": "Upbit",
+      "volume": "14570.09",
+    },
+    Object {
+      "exchange": "GMO Japan",
+      "volume": "890.96",
+    },
+    Object {
+      "exchange": "Gemini",
+      "volume": "1150.62",
+    },
+    Object {
+      "exchange": "BigONE",
+      "volume": "9643.85",
+    },
+    Object {
+      "exchange": "Coincheck",
+      "volume": "4649.29",
+    },
+    Object {
+      "exchange": "Pionex",
+      "volume": "29805.73",
+    },
+    Object {
+      "exchange": "Cryptology",
+      "volume": "640.30",
+    },
+    Object {
+      "exchange": "Phemex",
+      "volume": "2865.36",
+    },
+    Object {
+      "exchange": "FinexBox",
+      "volume": "383171.00",
+    },
+    Object {
+      "exchange": "itBit",
+      "volume": "700.98",
+    },
+    Object {
+      "exchange": "BingX",
+      "volume": "6830.04",
+    },
+    Object {
+      "exchange": "CoinTiger",
+      "volume": "3204.59",
+    },
+    Object {
+      "exchange": "LBank",
+      "volume": "5055.31",
+    },
+    Object {
+      "exchange": "BIT",
+      "volume": "208.72",
+    },
+    Object {
+      "exchange": "Bitexlive",
+      "volume": "186.57",
+    },
+    Object {
+      "exchange": "EXMO",
+      "volume": "8858.14",
+    },
+  ],
+}
+`;
+
+exports[`transforms markets should match the snapshot 1`] = `
+Array [
+  Object {
+    "id": "bitcoin",
+    "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    "name": "Bitcoin",
+    "price": 24249,
+  },
+  Object {
+    "id": "ethereum",
+    "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+    "name": "Ethereum",
+    "price": 1670.27,
+  },
+  Object {
+    "id": "tether",
+    "image": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1668148663",
+    "name": "Tether",
+    "price": 1.003,
+  },
+  Object {
+    "id": "binancecoin",
+    "image": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850",
+    "name": "BNB",
+    "price": 305.09,
+  },
+  Object {
+    "id": "usd-coin",
+    "image": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png?1547042389",
+    "name": "USD Coin",
+    "price": 0.99596,
+  },
+  Object {
+    "id": "ripple",
+    "image": "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731",
+    "name": "XRP",
+    "price": 0.369079,
+  },
+  Object {
+    "id": "cardano",
+    "image": "https://assets.coingecko.com/coins/images/975/large/cardano.png?1547034860",
+    "name": "Cardano",
+    "price": 0.341799,
+  },
+  Object {
+    "id": "matic-network",
+    "image": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+    "name": "Polygon",
+    "price": 1.16,
+  },
+  Object {
+    "id": "dogecoin",
+    "image": "https://assets.coingecko.com/coins/images/5/large/dogecoin.png?1547792256",
+    "name": "Dogecoin",
+    "price": 0.072208,
+  },
+  Object {
+    "id": "staked-ether",
+    "image": "https://assets.coingecko.com/coins/images/13442/large/steth_logo.png?1608607546",
+    "name": "Lido Staked Ether",
+    "price": 1663.06,
+  },
+  Object {
+    "id": "binance-usd",
+    "image": "https://assets.coingecko.com/coins/images/9576/large/BUSD.png?1568947766",
+    "name": "Binance USD",
+    "price": 0.996142,
+  },
+  Object {
+    "id": "solana",
+    "image": "https://assets.coingecko.com/coins/images/4128/large/solana.png?1640133422",
+    "name": "Solana",
+    "price": 20.05,
+  },
+  Object {
+    "id": "polkadot",
+    "image": "https://assets.coingecko.com/coins/images/12171/large/polkadot.png?1639712644",
+    "name": "Polkadot",
+    "price": 6.07,
+  },
+  Object {
+    "id": "shiba-inu",
+    "image": "https://assets.coingecko.com/coins/images/11939/large/shiba.png?1622619446",
+    "name": "Shiba Inu",
+    "price": 0.00001099,
+  },
+  Object {
+    "id": "dai",
+    "image": "https://assets.coingecko.com/coins/images/9956/large/4943.png?1636636734",
+    "name": "Dai",
+    "price": 0.998392,
+  },
+  Object {
+    "id": "tron",
+    "image": "https://assets.coingecko.com/coins/images/1094/large/tron-logo.png?1547035066",
+    "name": "TRON",
+    "price": 0.066293,
+  },
+  Object {
+    "id": "litecoin",
+    "image": "https://assets.coingecko.com/coins/images/2/large/litecoin.png?1547033580",
+    "name": "Litecoin",
+    "price": 80.51,
+  },
+  Object {
+    "id": "avalanche-2",
+    "image": "https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1670992574",
+    "name": "Avalanche",
+    "price": 16.32,
+  },
+  Object {
+    "id": "uniswap",
+    "image": "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png?1600306604",
+    "name": "Uniswap",
+    "price": 6.07,
+  },
+  Object {
+    "id": "wrapped-bitcoin",
+    "image": "https://assets.coingecko.com/coins/images/7598/large/wrapped_bitcoin_wbtc.png?1548822744",
+    "name": "Wrapped Bitcoin",
+    "price": 24290,
+  },
+  Object {
+    "id": "the-open-network",
+    "image": "https://assets.coingecko.com/coins/images/17980/large/ton_symbol.png?1670498136",
+    "name": "Toncoin",
+    "price": 2.45,
+  },
+  Object {
+    "id": "cosmos",
+    "image": "https://assets.coingecko.com/coins/images/1481/large/cosmos_hub.png?1555657960",
+    "name": "Cosmos Hub",
+    "price": 12.08,
+  },
+  Object {
+    "id": "chainlink",
+    "image": "https://assets.coingecko.com/coins/images/877/large/chainlink-new-logo.png?1547034700",
+    "name": "Chainlink",
+    "price": 6.7,
+  },
+  Object {
+    "id": "leo-token",
+    "image": "https://assets.coingecko.com/coins/images/8418/large/leo-token.png?1558326215",
+    "name": "LEO Token",
+    "price": 3.35,
+  },
+  Object {
+    "id": "okb",
+    "image": "https://assets.coingecko.com/coins/images/4463/large/WeChat_Image_20220118095654.png?1642471050",
+    "name": "OKB",
+    "price": 47.49,
+  },
+]
+`;
