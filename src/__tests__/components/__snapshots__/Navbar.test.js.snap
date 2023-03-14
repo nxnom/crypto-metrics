@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <span />
+    <h1
+      class="title"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Crypto Metrics
+      </a>
+    </h1>
+    <button
+      type="button"
+    >
+      <span />
+    </button>
+  </header>
+</div>
+`;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarketCard renders correctly 1`] = `
+<div>
+  <a
+    href="/coins/1"
+  >
+    <article
+      class="card"
+    >
+      <div
+        class="imgContainer"
+        style="background-image: url();"
+      >
+        <span />
+      </div>
+      <div
+        class="details"
+      >
+        <h2
+          class="name"
+        >
+          Market 1
+        </h2>
+        <p
+          class="price"
+        >
+          1.00 $
+        </p>
+      </div>
+    </article>
+  </a>
+</div>
+`;
