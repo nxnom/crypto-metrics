@@ -9,36 +9,32 @@ import { selectCurrency } from 'src/redux/filter/filterSlice';
 import { formatCurrency } from 'src/utils/currency';
 import styles from './MarketCard.module.css';
 
-function MarketCard({ market, expanded, dark }) {
+function MarketCard({ market, expanded }) {
   const currency = useSelector(selectCurrency);
 
   return (
-    <Link to={`/coins/${market.id}`}>
-      <article
-        className={cn(
-          styles.card,
-          expanded && styles.expanded,
-          dark && styles.dark,
-        )}
+    <Link
+      to={`/coins/${market.id}`}
+      className={cn(
+        styles.card,
+        expanded && styles.expanded,
+      )}
+    >
+      <div
+        className={styles.imgContainer}
+        style={{ backgroundImage: `url(${market.image})` }}
       >
-        <div
-          className={styles.imgContainer}
-          style={{ backgroundImage: `url(${market.image})` }}
-        >
-          {!expanded && (
-            <Icon
-              className={styles.icon}
-              icon="material-symbols:arrow-circle-right-outline"
-            />
-          )}
-        </div>
-        <div className={styles.details}>
-          <h2 className={styles.name}>{market.name}</h2>
-          <p className={styles.price}>
-            {formatCurrency(market.price, currency)}
-          </p>
-        </div>
-      </article>
+        {!expanded && (
+          <Icon
+            className={styles.icon}
+            icon="material-symbols:arrow-circle-right-outline"
+          />
+        )}
+      </div>
+      <div className={styles.details}>
+        <h2 className={styles.name}>{market.name}</h2>
+        <p className={styles.price}>{formatCurrency(market.price, currency)}</p>
+      </div>
     </Link>
   );
 }
@@ -51,12 +47,10 @@ MarketCard.propTypes = {
     image: PropTypes.string.isRequired,
   }).isRequired,
   expanded: PropTypes.bool,
-  dark: PropTypes.bool,
 };
 
 MarketCard.defaultProps = {
   expanded: false,
-  dark: false,
 };
 
 export default MarketCard;

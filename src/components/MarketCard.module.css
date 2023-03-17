@@ -1,4 +1,5 @@
 .card {
+  all: unset;
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
@@ -9,6 +10,17 @@
   color: white;
   text-align: right;
   position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.card:nth-of-type(4n - 1),
+.card:nth-of-type(4n - 2) {
+  background-color: var(--primary-dark);
+}
+
+.card:hover {
+  border-color: white;
 }
 
 .expanded {
@@ -17,7 +29,6 @@
   aspect-ratio: 2;
   text-align: left;
   gap: 2rem;
-  width: 100%;
 }
 
 .dark {
